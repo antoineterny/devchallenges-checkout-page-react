@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import "./index.css"
+import ProductComponent from "./ProductComponent"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+	<div class="products">
+		<ProductComponent name="Vintage Backbag" price="54.99" discount="94.99" imageUrl="photo1.png" />
+		<ProductComponent name="Levi Shoes" price="74.99" discount="124.99" imageUrl="photo2.png" />
+		<div class="addition" id="shipping">
+			<span>Shipping</span>
+			<span>$19</span>
+		</div>
+		<div class="addition">
+			<span>Total</span>
+			<span id="total">$148.98</span>
+		</div>
+	</div>,
+	document.getElementById("aside")
+)
