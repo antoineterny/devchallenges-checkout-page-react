@@ -4,7 +4,7 @@ function Button(props) {
 	const handleClick = () => props.onClickFunction(props.increment)
 	return (
 		<button onClick={handleClick} className={props.increment > 0 ? "plus" : "minus"}>
-			<i class="material-icons">{props.increment > 0 ? "add" : "remove"}</i>
+			<i className="material-icons">{props.increment > 0 ? "add" : "remove"}</i>
 		</button>
 	)
 }
@@ -21,7 +21,7 @@ function CounterComponent() {
 	}
 	return (
 		<div>
-			<div class="quantity">
+			<div className="quantity">
 				<Button id="minus" onClickFunction={incrementCounter} increment={-1} />
 				<Display message={counter} />
 				<Button id="plus" onClickFunction={incrementCounter} increment={1} />

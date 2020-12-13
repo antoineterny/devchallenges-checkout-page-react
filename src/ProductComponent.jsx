@@ -6,12 +6,12 @@ import CounterComponent from "./CounterComponent"
 
 function ProductComponent({name, price, discount, imageUrl}) {
 	return (
-		<div class="product">
+		<div className="product">
 			<img src={imageUrl} alt={name} />
-			<div class="description">
-				<div class="details">
+			<div className="description">
+				<div className="details">
 					<h3>{name}</h3>
-					<div class="price">
+					<div className="price">
 						${price}<span>${discount}</span>
 					</div>
 				</div>
