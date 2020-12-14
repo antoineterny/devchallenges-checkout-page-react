@@ -17,6 +17,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="responsive.css" />
 
 		<title>Devchallenges</title>
 	</head>
@@ -24,51 +25,7 @@
 		<h1>Checkout</h1>
 		<main>
 			<aside id="aside">
-				<!-- <div class="products">
-
-					<div class="product">
-						<img src="photo1.png" alt="Vintage Backbag" />
-						<div class="description">
-							<div class="details">
-								<h3>Vintage Backbag</h3>
-								<div class="price">$54.99<span>$94.99</span></div>
-							</div>
-							<div class="quantity">
-								<div class="button minus">
-									<i class="material-icons">remove</i>
-								</div>
-								<span>1</span>
-								<div class="button plus">
-									<i class="material-icons">add</i>
-								</div>
-              </div>
-							<div id="react-counter"></div>
-						</div>
-					</div>
-
-					<div class="product">
-						<img src="photo2.png" alt="Vintage Backbag" />
-						<div class="description">
-							<div class="details">
-								<h3>Levi Shoes</h3>
-								<div class="price">$74.99<span>$124.99</span></div>
-							</div>
-							<div class="quantity">
-								<div class="button minus">
-									<i class="material-icons">remove</i>
-								</div>
-								<span>1</span>
-								<div class="button plus">
-									<i class="material-icons">add</i>
-								</div>
-							</div>
-						</div>
-          </div>
-          
-				</div>
-
-				<div class="addition" id="shipping"><span>Shipping</span><span>$19</span></div>
-				<div class="addition"><span>Total</span><span id="total">$148.98</span></div> -->
+				<div id="products"></div>
 			</aside>
 
 			<form>
@@ -93,19 +50,19 @@
 
 					<label for="full-name">Full name</label>
 					<div class="input-wrapper">
-            <i class="material-icons">account_circle</i>
+						<i class="material-icons">account_circle</i>
 						<input type="text" id="full-name" placeholder="Your name..." />
 					</div>
 
 					<label for="address">Address</label>
 					<div class="input-wrapper">
-            <i class="material-icons">home</i>
+						<i class="material-icons">home</i>
 						<input type="text" id="address" placeholder="Your address..." />
 					</div>
 
 					<label for="city">City</label>
 					<div class="input-wrapper">
-            <i class="material-icons">location_city</i>
+						<i class="material-icons">location_city</i>
 						<input type="text" id="city" placeholder="Your city..." />
 					</div>
 
@@ -113,35 +70,42 @@
 						<label for="country"
 							>Country
 							<div class="input-wrapper">
-                <i class="material-icons">flag</i>
 								<select name="country" id="country">
 									<option value="null" class="placeholder">Your country...</option>
 									<option value="fr">France</option>
 									<option value="uk">United Kingdom</option>
 									<option value="it">Italy</option>
 								</select>
+								<i class="material-icons">keyboard_arrow_down</i>
 							</div>
 						</label>
 
 						<label for="postal-code"
 							>Postal Code
 							<div class="input-wrapper">
-                <i class="material-icons">markunread_mailbox</i>
-                <input type="text" id="postal-code" placeholder="Your postal code..." />
-              </div>
+								<i class="material-icons">markunread_mailbox</i>
+								<input type="text" id="postal-code" placeholder="Your postal code..." />
+							</div>
 						</label>
 					</div>
 
-					<label for="save-info">
+					<!-- <label for="save-info" id="save-info">
 						<input type="checkbox" name="save-info" id="save-info" /> Save this information for next time
-					</label>
+					</label> -->
+
+					<label class="cb-container"
+						>Save this information for next time
+						<input type="checkbox" name="save-info" id="save-info"/>
+						<span class="checkmark"></span>
+          </label>
+          
 				</fieldset>
 				<div class="submit-line">
-          <input type="submit" value="Continue" />
-        </div>
+					<input type="submit" value="Continue" />
+				</div>
 			</form>
-    </main>
-    
+		</main>
+
 		<footer>Antoine Terny @ DevChallenges.io</footer>
 		<!-- <script>
 			document.querySelectorAll(".plus").forEach(plus => {
@@ -153,6 +117,6 @@
 					minus.parentNode.querySelector("span").innerText--
 				}
 			})
-		</script> -->
+    </script> -->
 	</body>
 </html>
