@@ -17,7 +17,7 @@
 }
 
 body {
-  padding: 32px 18px;
+  padding: 32px 18px 18px;
   font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: var(--dark-grey);
   min-width: 360px;
@@ -147,7 +147,127 @@ aside {
   padding: 10px 0;
 }
 
-.products {
-  margin-bottom: 88px;
+#shipping {
+  margin-top: 88px;
+}
+
+form * {
+  display: block;
+  font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+form fieldset {
+  border: none;
+  margin-top: 40px;
+}
+
+form legend {
+  font-size: 14px;
+  color: var(--gray1);
+  margin-bottom: 12px;
+}
+
+form label {
+  font-size: 10px;
+  color: var(--gray2);
+  margin-bottom: 5px;
+}
+
+form .placeholder {
+  color: red;
+}
+
+form input[type="checkbox"] {
+  display: inline;
+}
+
+.two-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  gap: 24px;
+}
+
+.two-fields label {
+  width: 100%;
+}
+
+option.placeholder {
+  color: var(--gray3);
+}
+
+::-webkit-input-placeholder {
+  color: var(--gray3);
+}
+
+:-ms-input-placeholder {
+  color: var(--gray3);
+}
+
+::-ms-input-placeholder {
+  color: var(--gray3);
+}
+
+::placeholder {
+  color: var(--gray3);
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 17px;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid var(--gray3);
+  border-radius: 12px;
+  color: var(--gray1);
+}
+
+.input-wrapper i.material-icons {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: var(--gray3);
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  background-color: var(--orange);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 166px;
+  height: 54px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ee7f1d;
+}
+
+.submit-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer {
+  margin-top: 126px;
+  text-align: center;
+  color: #a9a9a9;
+  font-weight: 600;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

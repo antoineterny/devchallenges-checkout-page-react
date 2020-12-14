@@ -25,7 +25,7 @@
 		<main>
 			<aside id="aside">
 				<!-- <div class="products">
-          
+
 					<div class="product">
 						<img src="photo1.png" alt="Vintage Backbag" />
 						<div class="description">
@@ -71,9 +71,78 @@
 				<div class="addition"><span>Total</span><span id="total">$148.98</span></div> -->
 			</aside>
 
-			<section></section>
-		</main>
+			<form>
+				<fieldset>
+					<legend>Contact information</legend>
 
+					<label for="email">E-mail</label>
+
+					<div class="input-wrapper">
+						<i class="material-icons">email</i>
+						<input type="email" id="email" placeholder="Enter your email..." />
+					</div>
+
+					<label for="phone">Phone</label>
+					<div class="input-wrapper">
+						<i class="material-icons">phone</i>
+						<input type="tel" id="phone" placeholder="Enter your phone..." />
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Shipping address</legend>
+
+					<label for="full-name">Full name</label>
+					<div class="input-wrapper">
+            <i class="material-icons">account_circle</i>
+						<input type="text" id="full-name" placeholder="Your name..." />
+					</div>
+
+					<label for="address">Address</label>
+					<div class="input-wrapper">
+            <i class="material-icons">home</i>
+						<input type="text" id="address" placeholder="Your address..." />
+					</div>
+
+					<label for="city">City</label>
+					<div class="input-wrapper">
+            <i class="material-icons">location_city</i>
+						<input type="text" id="city" placeholder="Your city..." />
+					</div>
+
+					<div class="two-fields">
+						<label for="country"
+							>Country
+							<div class="input-wrapper">
+                <i class="material-icons">flag</i>
+								<select name="country" id="country">
+									<option value="null" class="placeholder">Your country...</option>
+									<option value="fr">France</option>
+									<option value="uk">United Kingdom</option>
+									<option value="it">Italy</option>
+								</select>
+							</div>
+						</label>
+
+						<label for="postal-code"
+							>Postal Code
+							<div class="input-wrapper">
+                <i class="material-icons">markunread_mailbox</i>
+                <input type="text" id="postal-code" placeholder="Your postal code..." />
+              </div>
+						</label>
+					</div>
+
+					<label for="save-info">
+						<input type="checkbox" name="save-info" id="save-info" /> Save this information for next time
+					</label>
+				</fieldset>
+				<div class="submit-line">
+          <input type="submit" value="Continue" />
+        </div>
+			</form>
+    </main>
+    
+		<footer>Antoine Terny @ DevChallenges.io</footer>
 		<!-- <script>
 			document.querySelectorAll(".plus").forEach(plus => {
 				plus.onclick = () => plus.parentNode.querySelector("span").innerText++
