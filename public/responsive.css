@@ -125,5 +125,9 @@
     top: 18px;
     font-size: 20px;
   }
+  #country {
+    background-position: top 18px right 12px;
+    background-size: 21px 21px;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -293,8 +293,8 @@ option.placeholder {
 #country {
   background-image: url("arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: top 9px right 12px;
-  background-size: 21px 21px;
+  background-position: top 12px right 12px;
+  background-size: 15px 15px;
 }
 
 input[type="submit"] {
