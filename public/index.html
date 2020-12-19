@@ -36,13 +36,13 @@
 
 					<div class="input-wrapper">
 						<i class="material-icons">email</i>
-						<input type="email" id="email" placeholder="Enter your email..." />
+						<input required type="email" id="email" placeholder="Enter your email..." />
 					</div>
 
 					<label for="phone">Phone</label>
 					<div class="input-wrapper">
 						<i class="material-icons">phone</i>
-						<input type="tel" id="phone" placeholder="Enter your phone..." />
+						<input required type="tel" id="phone" placeholder="Enter your phone..." />
 					</div>
 				</fieldset>
 				<fieldset>
@@ -51,32 +51,35 @@
 					<label for="full-name">Full name</label>
 					<div class="input-wrapper">
 						<i class="material-icons">account_circle</i>
-						<input type="text" id="full-name" placeholder="Your name..." />
+						<input required type="text" id="full-name" placeholder="Your name..." />
 					</div>
 
 					<label for="address">Address</label>
 					<div class="input-wrapper">
 						<i class="material-icons">home</i>
-						<input type="text" id="address" placeholder="Your address..." />
+						<input required type="text" id="address" placeholder="Your address..." />
 					</div>
 
 					<label for="city">City</label>
 					<div class="input-wrapper">
 						<i class="material-icons">location_city</i>
-						<input type="text" id="city" placeholder="Your city..." />
+						<input required type="text" id="city" placeholder="Your city..." />
 					</div>
 
 					<div class="two-fields">
 						<label for="country"
 							>Country
 							<div class="input-wrapper">
-								<select name="country" id="country">
-									<option value="null" class="placeholder">Your country...</option>
+								<select required name="country" id="country">
+									<option value="" class="placeholder">Your country...</option>
 									<option value="fr">France</option>
 									<option value="uk">United Kingdom</option>
 									<option value="it">Italy</option>
 								</select>
-								<i class="material-icons">keyboard_arrow_down</i>
+								<i class="material-icons">public</i>
+								<!-- <div class="arrow-icon">
+									<i class="material-icons">keyboard_arrow_down</i>
+								</div> -->
 							</div>
 						</label>
 
@@ -84,7 +87,7 @@
 							>Postal Code
 							<div class="input-wrapper">
 								<i class="material-icons">markunread_mailbox</i>
-								<input type="text" id="postal-code" placeholder="Your postal code..." />
+								<input required type="text" id="postal-code" placeholder="Your postal code..." />
 							</div>
 						</label>
 					</div>

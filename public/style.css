@@ -277,7 +277,7 @@ option.placeholder {
   position: relative;
 }
 
-.input-wrapper select option {
+.input-wrapper option {
   color: var(--gray1);
 }
 
@@ -288,6 +288,13 @@ option.placeholder {
   color: var(--gray3);
   margin-right: 12px;
   font-size: 18px;
+}
+
+#country {
+  background-image: url("arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: top 9px right 12px;
+  background-size: 21px 21px;
 }
 
 input[type="submit"] {
